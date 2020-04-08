@@ -1,0 +1,14 @@
+name: 'kn deps'
+description: 'Update some deps!'
+inputs:
+  options:
+    description: 'any extra options to pass down to ./hack/update-deps.sh'
+    required: false
+
+outputs:
+  output:
+    description: 'The output of hack/update-deps.sh run'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

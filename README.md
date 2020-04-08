@@ -1,2 +1,2 @@
 # dep-action
-GitHub action to run update-deps.
+GitHub Action for `hack/update-deps.sh``
