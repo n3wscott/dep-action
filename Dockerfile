@@ -6,6 +6,8 @@ RUN go get github.com/google/licenseclassifier
 RUN go get github.com/google/go-licenses
 RUN go get knative.dev/test-infra/tools/dep-collector
 
+ENV PATH "$PATH:$GOPATH/bin"
+
 # Entrypoint:
 COPY ./entrypoint.sh /
 RUN chmod +x /entrypoint.sh
